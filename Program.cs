@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Hodina
 {
@@ -9,6 +10,7 @@ namespace Hodina
         {
             LakeHandler lake = new LakeHandler(100_000);
             //lake.Debug(lake.Lake);
+            List<LakeHandler.Catch> list = lake.GetCatches();
         }
 
 
