@@ -4,57 +4,24 @@ namespace Hodina
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            Student s = new Student("Jan", "Novak", 3);
+            LakeHandler lake = new LakeHandler(100_000);
+            //lake.Debug(lake.Lake);
         }
-    }
 
-    public class Human
-    {
-        
-        public Human(string inpName,string inpSurname) 
+
+        public struct TestStruct
         {
-            Name = inpName;
-            Surname = inpSurname;
+            public string Name { get; set; }
+            public int Age { get; set; }
+
+            public override string ToString()
+            {
+                return $"Name: {Name} Age: {Age}"; 
+            }
         }
 
-        public string Name { get; set; }
-        public string Surname { get; set; }
-    }
-
-    public class Student : Human
-    {
-        int grade;
-
-        public Student(string inpName, string inpSurname ,int inpGrade) : base(inpName, inpSurname)
-        {
-            grade = inpGrade;
-        }
-
-       public int Grade
-        {
-            get { return this.grade; }
-            set { if (value > 0 && value < 6) { this.grade = value; } }
-        }
-
-    }
-
-    public class Worker : Human
-    {
-
-        public Worker(string inpName, string inpSurname, decimal inpWage, int inpHours) :base(inpName, inpSurname)
-        {
-            Wage = inpWage;
-            HoursWorkedFor = inpHours;
-        }
-
-        public decimal Wage { get; set; }
-        public int HoursWorkedFor { get; set; }
-
-        public decimal HourlyWage()
-        {
-            return (decimal)(Wage / HoursWorkedFor);
-        }
     }
 }
