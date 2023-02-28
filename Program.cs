@@ -8,9 +8,11 @@ namespace Hodina
 
         static void Main(string[] args)
         {
-            LakeHandler lake = new LakeHandler(100_000);
-            //lake.Debug(lake.Lake);
-            List<LakeHandler.Catch> list = lake.GetCatches();
+            //LakeHandler lake = new LakeHandler(100_000);
+            ////lake.Debug(lake.Lake);
+            //List<LakeHandler.Catch> list = lake.GetCatches();
+
+            DateTimePractice.SolveMoreShit();
         }
 
 
