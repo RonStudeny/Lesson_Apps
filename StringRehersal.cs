@@ -11,18 +11,19 @@ namespace Hodina
                     { 1.0 , 2.0 , 3.0  },
                     { 5.0 , 4.0 , 2.0 }
             };
-            string[,] res = new string[input.GetLength(0) + 1, input.GetLength(1) + 1];
+            string[,] res = new string[input.GetLength(1) + 1, input.GetLength(0) + 1];
             double bufferX = 0, bufferY = 0;
+            int j;
 
             for (int i = 0; i < input.GetLength(1); i++) // horizontal
             {
-                for (int j = 0; j < input.GetLength(0); j++)
+                for (j = 0; j < input.GetLength(0); j++)
                 {
                     bufferX += input[i, j];
                     bufferY += input[j, i];
                 }
                 res[i, res.GetLength(0)] = bufferX.ToString();
-                res[res.GetLength(1), i] = bufferY.ToString();
+                res[res.GetLength(1), j] = bufferY.ToString();
                 bufferX = 0;
                 bufferY = 0;
             }
@@ -40,9 +41,9 @@ namespace Hodina
 
             for (int i = 0; i < input.GetLength(0); i++) // rewrite the array
             {
-                for (int j = 0; j < input.GetLength(1); j++)
+                for (int k = 0; k < input.GetLength(1); k++)
                 {
-                    res[i, j] = input[i, j].ToString();
+                    res[i, k] = input[i, k].ToString();
                 }
 
             }
