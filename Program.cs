@@ -12,7 +12,7 @@ namespace Hodina
             ////lake.Debug(lake.Lake);
             //List<LakeHandler.Catch> list = lake.GetCatches();
 
-            DateTimePractice.SolveMoreShit();
+            StringRehersal.DebugTheArr(StringRehersal.GetSums());
         }
 
 
