@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hodina", "Hodina.csproj", "{F682E729-DE58-4FD0-8384-FACB83AA6779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hodina", "Hodina.csproj", "{F682E729-DE58-4FD0-8384-FACB83AA6779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{AD502C88-8A4F-4970-A145-321A5CBD793D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F682E729-DE58-4FD0-8384-FACB83AA6779}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F682E729-DE58-4FD0-8384-FACB83AA6779}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F682E729-DE58-4FD0-8384-FACB83AA6779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD502C88-8A4F-4970-A145-321A5CBD793D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD502C88-8A4F-4970-A145-321A5CBD793D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD502C88-8A4F-4970-A145-321A5CBD793D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD502C88-8A4F-4970-A145-321A5CBD793D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

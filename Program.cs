@@ -12,7 +12,9 @@ namespace Hodina
             ////lake.Debug(lake.Lake);
             //List<LakeHandler.Catch> list = lake.GetCatches();
 
-            StringRehersal.DebugTheArr(StringRehersal.GetSums());
+           // StringRehersal.DebugTheArr(StringRehersal.GetSums());
+
+            WebScraper scraper = new WebScraper();
         }
 
 
